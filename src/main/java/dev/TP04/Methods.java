@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Methods {
 
-	public static void list(Pizza[] pizzas, int j) {
+	 static void list(Pizza[] pizzas, int j) {
 		int i = 0;
 		while (i < j) {
 			System.out.println(pizzas[i].toString());
@@ -12,7 +12,7 @@ public class Methods {
 		}
 	}
 
-	public static int addPizza(Pizza[] pizzas, int j) {
+	 static int addPizza(Pizza[] pizzas, int j) {
 		String code;
 		String nom;
 		Double prix;
@@ -28,7 +28,7 @@ public class Methods {
 		return j;
 	}
 
-	public static void modifyPizza(Pizza[] pizzas, int j) {
+	 static void modifyPizza(Pizza[] pizzas, int j) {
 		Scanner scann = new Scanner(System.in);
 		System.out.println("Veuillez saisir le code de la pizza a modifier:"); 
 		System.out.println("99 pour abandonner");															
@@ -57,8 +57,7 @@ public class Methods {
 			else{System.out.println("Code not found");} }
 	}
 
-	
-	public static int deletePizza(int j, Pizza[] pizzas) {
+	 static int deletePizza(int j, Pizza[] pizzas) {
 		System.out.println("Veuillez saisir le code de la pizza a eliminer:");
 		System.out.println("99 pour abandonner");
 
@@ -81,7 +80,7 @@ public class Methods {
 
 	
 //It returns the position of the code searched
-public static int checkList(String Q, Pizza[] pizzas, int j){
+private static int checkList(String Q, Pizza[] pizzas, int j){
 	
 	
 	/* Busqueda en la matriz a ver si encuentra el codigo */
@@ -103,7 +102,7 @@ public static int checkList(String Q, Pizza[] pizzas, int j){
 }
 
 //It reestructure the table to eliminate the gaps
-public static void reestructure (Pizza[] pizzas, int a, int j){
+private static void reestructure (Pizza[] pizzas, int a, int j){
 	// Reestructuracion de la tabla
 	int b;
 	while (a <(j-1)) {

@@ -54,7 +54,9 @@ public class PizzaWorld {
         		case (4):// Delete a Pizza from the list
         			numPizzas=Methods.deletePizza(numPizzas, pizzas);
         			break;
-        		default :}
+        		case (99):
+        			break;
+        		default :System.out.println( "Code not found" );}
         	
             System.out.println( "1. Lister les pizzas" );
             System.out.println( "2. Ajouter une nouvelle pizza" );
